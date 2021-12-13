@@ -6,11 +6,14 @@ from bs4 import BeautifulSoup
 from discord.ext import commands
 from urllib import parse
 
-client = discord.Client()
+client = commands.Bot(command_prefix = '-')
 pageurl = "https://lostark.game.onstove.com/Profile/Character/"
 
 @client.event
 async def on_ready():
+    await client.change_presence(status=discord.Status.online)
+    await client.change_presence(activity=discord.Game(name="커피 한잔중"))
+    
     print("Logged in as ") #봇의 아이디, 닉네임이 출력
     print(client.user.name)
     print(client.user.id)

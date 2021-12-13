@@ -5,6 +5,7 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 from discord.ext import commands
 from urllib import parse
+import os
 
 client = commands.Bot(command_prefix = '-')
 pageurl = "https://lostark.game.onstove.com/Profile/Character/"

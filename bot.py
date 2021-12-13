@@ -13,7 +13,7 @@ pageurl = "https://lostark.game.onstove.com/Profile/Character/"
 @client.event
 async def on_ready():
     await client.change_presence(status=discord.Status.online)
-    await client.change_presence(activity=discord.Game(name="커피 한잔중"))
+    await client.change_presence(activity=discord.Game(name="커피 한잔"))
     
     print("Logged in as ") #봇의 아이디, 닉네임이 출력
     print(client.user.name)

@@ -1,5 +1,3 @@
-import asyncio
-import discord
 import re
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
